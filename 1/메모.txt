@@ -1,0 +1,43 @@
+node, vscode, yarn 설치
+yarn add [패키지이름]
+npm create react-app [이름]
+yarn create react-app [이름]
+
+f1 markdown open preview 드가면 md 미리봄
+
+es5 값 없는 걸 대비하여 기본값넣기
+function add (x=1,y=2){
+  return x+y ;
+}
+
+화살표함수 : 한줄 + 리턴이 목적 이면 {} 와 return 생략
++ this 가 바뀜 e 랑 this 쓴게 e 랑 e.currentTarget .
+
+클래스이름 대문자시작이 국룰.
+constructor 는 멤버변수를 정의하고 초기값을 할당.
+멤버변수는 this. 이 국룰 + _이름 도 국를 ex) this._name='홍길동';
+클래스안에 함수는 화살표안댐
+class [후손이름] extends [부모이름]{
+  this.부모함수(x)
+}
+
+npm i -g eslint
+npm install -D babel-eslint
+npm install -D eslint-plugin-react
+setting.json에서
+"javascript.validate.enable": false,
+"eslint.enable": true
+
+<매 프로젝트마다>
+.jshintrc 만들어서
+{
+  "esversion":6
+} 끝.
+
+import 받을놈이름 from 상대경로;
+export default 보낼놈이름;
+(노드백엔드에서는)
+const 받을놈이름 =require(상대경로);
+module.exports = 보낼놈이름;
+
+설정->tab-> Tab Completion -> 온리스니팹츠
