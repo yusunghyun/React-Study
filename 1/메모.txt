@@ -24,6 +24,7 @@ class [후손이름] extends [부모이름]{
 npm i -g eslint
 npm install -D babel-eslint
 npm install -D eslint-plugin-react
+npm i react-router-dom
 setting.json에서
 "javascript.validate.enable": false,
 "eslint.enable": true
@@ -41,3 +42,5 @@ const 받을놈이름 =require(상대경로);
 module.exports = 보낼놈이름;
 
 설정->tab-> Tab Completion -> 온리스니팹츠
+
+leekh4232@gmail.com
