@@ -44,3 +44,5 @@ module.exports = 보낼놈이름;
 설정->tab-> Tab Completion -> 온리스니팹츠
 
 leekh4232@gmail.com
+
+라우터계 else쓰려면 switch 라우터돔에서 꺼네서 스위치로 묶는 습관 ㄱㄱ
