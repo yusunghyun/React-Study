@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Link, Switch} from 'react-router-dom'
+
+import InlineCss from './components/InlineCss'
+import CssClass from './components/CssClass'
+import CssModule from './components/CssModule'
+import Scss from './components/Scss'
+import ScssModule from './components/ScssModule'
+import StyledComponent from './components/StyledComponent'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>StyleSheet-공부!</h1>
+      <Link to ="/inline_css">[InlineCss]</Link>
+      <Link to ="/css_class">[CssClass]</Link>
+      <Link to ="/css_module">[CssModule]</Link>
+      <Link to ="/scss">[Scss]</Link>
+      <Link to ="/scss_module">[ScssModule]</Link>
+      <Link to ="/styled_component">[StyledComponent]</Link>
+      <hr />
+      <Switch>
+        <Route path='/inline_css' component={InlineCss}/>
+        <Route path='/css_class' component={CssClass}/>
+        <Route path='/css_module' component={CssModule}/>
+        <Route path='/scss' component={Scss}/>
+        <Route path='/scss_module' component={ScssModule}/>
+        <Route path='/styled_component' component={StyledComponent}/>
+      </Switch>
     </div>
   );
 }

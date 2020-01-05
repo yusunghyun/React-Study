@@ -2,3 +2,5 @@ yarn cache clean
 yarn add --dev jest
 yarn add react-app 2
 yarn add react-router-dom
+yarn create react-app [ddd]
+yarn add node-sass
