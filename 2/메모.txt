@@ -1,0 +1,4 @@
+yarn cache clean
+yarn add --dev jest
+yarn add react-app 2
+yarn add react-router-dom

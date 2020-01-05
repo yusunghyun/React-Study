@@ -1,8 +1,8 @@
 import React from 'react';
 /* path파라미터를 전달받는 페이지 */
-const DepartmentPath = (props) => {
+const DepartmentPath = ({match}) => {
   console.group("DepartmentPath");
-  const urlParams = props.match.params;
+  const urlParams = match.params;
   console.log(urlParams)
   console.groupEnd()
 
