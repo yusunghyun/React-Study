@@ -1,0 +1,17 @@
+useState사용하기
+1. import {useState} from 'react'
+2. const [변수,set변수] = useState(초기값); 
+// const [getter, setter] 이거 맞나?ㅎㅎ
+state값을 바꾸면(=set변수) 모든 컴포넌트의 html을 싹다 갱신(메모리단에서)
+
+label for="요놈"
+input id="요놈" 
+일치시켜야함
+
+useEffect
+랜더링 직후마다 실행, 콜백으로.
+
+반복문 랜더링은 반복문각 요소마다 각각 고유 key 꼭 할당!!
+
+
+
