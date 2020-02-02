@@ -21,8 +21,8 @@ e.target vs e.currentTarget
 .value 박으면 그 태그의 value값 반환.
 
 useState vs useReducer
-전자는 지역변수관리
-후자는 지역함수관리
+전자는 지역변수관리,첫번째인자초기값
+후자는 지역함수관리,두번째인자초기값
 후자에서 함수겸 변수로도 할 수 있어서 더 큰 영역이라 생각해도됨
 useState(0) = useReducer(_,0)
 
@@ -30,6 +30,6 @@ useState(0) = useReducer(_,0)
 
 ㅁ = useRef 태그에 ref=ㅁ  이렇게 연결 
 
-
+useMemo의 두번째 인자는 감시용.
 
 
