@@ -10,8 +10,26 @@ input id="요놈"
 
 useEffect
 랜더링 직후마다 실행, 콜백으로.
+얘는 따로 노는거같다 created()마냥.
 
 반복문 랜더링은 반복문각 요소마다 각각 고유 key 꼭 할당!!
+
+e.target vs e.currentTarget
+전자는 클릭한 그것.을 반환하고
+후자는 선언해준곳.을 반환 
+뭐냐면 클릭을 인정해주는 문단태그.
+.value 박으면 그 태그의 value값 반환.
+
+useState vs useReducer
+전자는 지역변수관리
+후자는 지역함수관리
+후자에서 함수겸 변수로도 할 수 있어서 더 큰 영역이라 생각해도됨
+useState(0) = useReducer(_,0)
+
+파일이름,무조건 대문자시작.
+
+ㅁ = useRef 태그에 ref=ㅁ  이렇게 연결 
+
 
 
 

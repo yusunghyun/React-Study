@@ -9,7 +9,7 @@ const StateEffectEx = () => {
     $.get('http://itpaper.co.kr/demo/react/api/dept_list.php',json=>{
       setDepartment(json.item)
     });
-  },[]);
+  },[]);//최초 1회 끝.
 
   return (
     <div>

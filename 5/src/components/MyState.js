@@ -8,6 +8,8 @@ const MyState = () => {
 
   const handleMyPointChange = e =>{
     setMyPoint(e.currentTarget.value)
+    console.log(e.currentTarget)
+
   }
 
   return (

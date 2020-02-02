@@ -1,3 +1,4 @@
+
 컴포넌트의 특성
 
 props
@@ -19,7 +20,3 @@ lifecycle, hook, redux
 NavLink
 const 변수명={color:'red', ...}
 <NavLink activeStyle={변수명} to="/링크">[내용]</NavLink> 이렇게 사용가능.
-
-
-
-
