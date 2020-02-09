@@ -1,0 +1,5 @@
+export { a,b,c} 
+import { a,b,c} from '위치'
+
+export default HelloWorld;
+import 사용자정의이름 from '파일위치'

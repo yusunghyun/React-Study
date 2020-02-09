@@ -1,6 +1,7 @@
 import React from 'react';
+import contents from '../data/NewsContents'
 
-const NewsList = () => {
+const NewsList = ({catecory}) => {
   return (
     <div>
       
