@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Redux</title>
+</head>
+<body>
+  <h1>Simple Redux</h1>
+  <h2 id='label'>0</h2>
+  <div>
+    <button type="button" id = 'plusButton'>+1</button>
+    <button type="button" id = 'minusButton' >-1</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
+  <script>
+    const PLUS = 'PLUS'
+    const MINUS = 'MINUS'
+    function plusAction(value){
+      const action = {
+        type:PLUS,
+        diff:value
+      }
+      return action
+    }
+    const minusAction = (value) => ({  type : MINUS, diff : value })
+    const initialState = {
+      number : 0,
+      color : '#f60'
+    }
+    const myCountReducer = (state=initialState,action=null)=>{
+      console.log(action)
+      let numberValue = 0;
+      let colorValue = '#000'
+
+      switch (action.type) {
+        case PLUS:
+          numberValue = state.number + action.diff
+          break;
+        case MINUS:
+          numberValue = state.number - action.diff
+          break;
+      
+        default:
+          return state;
+      }
+      colorValue = '#000'
+      if(numberValue>0){
+        colorValue = '#2f77eb'
+      } else if (numberValue < 0) { colorValue = '#60'}
+      return {number:numberValue,color:colorValue}
+    }
+    const store = Redux.createStore(myCountReducer)
+    store.subscribe(()=>{ // 구독 특정 함수를 스토어에 등록하는 처리 실시간 감시?
+      const state = store.getState()
+      document.getElementById('label').innerText = state.number
+      document.getElementById('label').style.color = state.color
+      console.log('스토어를 구독하는 함수가 실행됨')
+    })
+    document.getElementById('plusButton').addEventListener('click',()=>{
+      store.dispatch(plusAction(1))
+    })
+    document.getElementById('minusButton').addEventListener('click',()=>{
+      store.dispatch(minusAction(1))
+    })
+
+
+  </script>
+</body>
+</html>

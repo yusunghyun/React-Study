@@ -1,0 +1,3 @@
+ctrl + shift + L 동명 다 찾기
+end 행의 맨오른쪽
+home 행의 맨왼쪽

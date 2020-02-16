@@ -1,5 +1,5 @@
 yarn cache clean
-yarn add --dev jest
+yarn add --dev jest //이거 제스트테스트인데?
 yarn create react-app [ddd]
 /yarn add react-app 2
 yarn add react-router-dom
