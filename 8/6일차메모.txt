@@ -1,3 +1,44 @@
 ctrl + shift + L 동명 다 찾기
 end 행의 맨오른쪽
 home 행의 맨왼쪽
+두손가락동시터치 -> 마우스우클릭
+alt + shift + 오른쪽화살표 하다보면 한행 드래그 / 다 드래그
+
+화살표함수는 중괄호는 리턴을 없앤거다!
+
+yarn cache clean
+yarn add --dev jest //이거 제스트테스트인데?
+yarn create react-app [ddd]
+yarn add react-router-dom
+yarn add styled-components
+yarn add redux
+yarn add redux-actions
+yarn add react-redux
+yarn add redux-devtools-extension
+
+            <리덕스>
+컨테이너 컴포넌트 : 리덕스와 연동되는 화면을 갖지 않는 컴포넌트
+프레젠테이션 컴포넌트 : Props를 받아와 화면에 UI를 보여주기만 하는 역할
+
+흐름:모듈(리덕스스토어만들기)->index->App->컨.컴->스토어사용->프.컴
+
+                 ---> 액션 디스패치 --->
+컨테이너 컴포넌트                        리덕스스토어 
+        |        <---- 스토어 상태  <----
+        V
+      Props
+        |
+        V
+[프레젠테이션 컴포넌트]
+
+<순서>
+[액션] --> [미들웨어] --> [리듀서] --> [스토어]
+
+<미들웨어>
+
+const middleWare = store => next => action => {
+  // 미들웨어 기본 구조
+}
+export default middleWare
+
+리덕스-사가 : 비동기 작업을 위한 미들웨어(주로 timer,Ajax)
