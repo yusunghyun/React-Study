@@ -38,5 +38,5 @@ const myCountReducer = {//리듀서는 위에 initialState와 같은 구조를 �
   }
 }
 
-const myCountModule = handleActions(myCountReducer,initialState);
+const myCountModule = handleActions(myCountReducer,initialState); //
 export default myCountModule;

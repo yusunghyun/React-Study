@@ -19,6 +19,10 @@ const CounterContainer = what => {
 
   );
 };
+export default connect(state => ({
+  number: state.counterModule.number,
+  color: state.counterModule.color
+}),{plusAction, minusAction})(CounterContainer);
 
 // const getState = state => ({
 //   number: state.counterModule.number,
@@ -29,8 +33,3 @@ const CounterContainer = what => {
 
 
 // export default dispatch(CounterContainer);
-
-export default connect(state => ({
-  number: state.counterModule.number,
-  color: state.counterModule.color
-}),{plusAction, minusAction})(CounterContainer);

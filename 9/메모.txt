@@ -1,0 +1,21 @@
+<redux-thunk>
+yarn add react-router-dom styled-components axios redux react-redux redux-actions redux-devtools-extension redux-logger redux-thunk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
