@@ -1,8 +1,8 @@
 import {combineReducers} from 'redux'
-import counterModule from './Counter.js'
+import newsModule from './News.js'
 
 const rootReducer = combineReducers({
-  counterModule
+  newsModule
 })
 
 export default rootReducer;

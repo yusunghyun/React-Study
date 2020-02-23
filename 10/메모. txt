@@ -17,6 +17,6 @@ git push origin master
 src/index.js복붙
 src/modules/index.js 복붙 연결용
 
-
-
+뉴스프로젝트프로세스
+Module -> index.js -> pages/NewsPage.js -> container(Ajax) -> NewsList.js(component) -> NewsItem.js(component)
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import {NavLink,Switch,Route} from 'react-router-dom'
+import NewsPage from './pages/NewsPage'
 
-function App() {
+const App = () => {
 
   const myStyle = {
     fontWeight: 'bold',
@@ -11,7 +12,10 @@ function App() {
 
   return (
     <div>
-      
+      <h1>Redux-News-Viewer</h1>
+      <Switch>
+        <Route path='/:category?' component={NewsPage}/>
+      </Switch>
     </div>
   );
 }
