@@ -7,9 +7,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 //Redux초기화
 import { combineReducers } from 'redux'
-export default combineReducers({
 
-})
 //스토어 생성함수, 미들웨어 처리 함수
 import { createStore, applyMiddleware } from 'redux'
 //전체 App을 리덕스에 구독시키기 위한 프로바이더
