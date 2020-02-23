@@ -13,5 +13,10 @@ git push origin master
 커서가 위치한 같은 단어 반복 선택: Ctrl + D
 라인 들여쓰기: Ctrl +]
 
+☆redux 초기 세팅.☆
+src/index.js복붙
+src/modules/index.js 복붙 연결용
+
+
 
 
