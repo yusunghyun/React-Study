@@ -1,6 +1,7 @@
 <redux-thunk>
 yarn add react-router-dom styled-components axios redux react-redux redux-actions redux-devtools-extension redux-logger redux-thunk
 
+프로젝트 이름바꾸기 1.폴더명바꾼다 2.package.json 에 name 바꾼다
 
 
 
